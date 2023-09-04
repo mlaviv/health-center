@@ -1,0 +1,157 @@
+
+:root {
+    --gray: #757575;
+    --green: #a5c422;
+    --blue: #4267b2;
+    --bg-color: #f9f9f9;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    color: #7f7f7f;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* navbar  */
+.navbar .logo {
+    color: var(--green);
+}
+
+.navbar .btn {
+    background-color: var(--green);
+    color: white;
+    transition: 0.5s ease;
+}
+.navbar .btn:hover {
+    background-color: var(--blue);
+}
+
+.navbar ul, .main-btn {
+    font-size: 15px;
+    font-weight: 500;
+}
+/* navbar  */
+
+/* landing  */
+.carousel-inner img {
+    height: calc(100vh - 72px);
+    width: 100vw;
+    object-fit: cover;
+    position: relative;
+}
+.carousel-inner .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.2);
+    z-index: 1;
+}
+.carousel-inner .carousel-item .carousel-caption {
+    z-index: 2;
+}
+
+.landing .carousel-caption h5 {
+    font-size: 60px;
+}
+
+.landing .carousel-caption p {
+    letter-spacing: 2px;
+}
+
+.landing .carousel-item:first-of-type .box a   {
+    background-color: var(--green);
+    color: white;
+    transition: 0.5s ease;
+}
+/* landing  */
+
+/* about  */
+.about {
+    background: url(../image/about-bg.jpg) no-repeat top center;
+    background-size: cover;
+    padding: 150px 0;
+}
+/* about  */
+
+/* doctors */
+.doctors .card-links {
+    transition:all 0.8s ease;
+    left: 50%;
+    top: 120%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+.doctors .card:hover .card-links {
+    top: 60%;
+    opacity: 1;
+}
+
+.doctors  a {
+    color: #757575;
+    background-color: white;
+    transition: 0.5s ease;
+}
+
+.doctors li:hover a {
+    color: white;
+    background-color: var(--blue);
+}
+.doctors .card-body a {
+    color: #757575;
+}
+.doctors .card-body a:hover {
+    color: var(--blue);
+    transition: 0.5s ease;
+}
+/* doctors */
+
+/* news  */
+.news a {
+    color: black;
+    transition:all 0.5s ease;
+
+}
+.news a:hover {
+    color: var(--green);
+}
+/* news  */
+
+/* appointment  */
+.appointment .btn {
+    color: white;
+    background-color: var(--green);
+    transition: 0.5s ease;
+}
+.appointment .btn:hover {
+    background-color: var(--blue);
+}
+/* appointment  */
+
+/* footer  */
+.footer li a {
+    color: #757575;
+    background-color: white;
+    transition: 0.5s ease;
+}
+.footer li:hover a {
+    color: white;
+    background-color: var(--blue);
+}
+.footer span {
+    color: var(--green);
+}
+/* footer  */
